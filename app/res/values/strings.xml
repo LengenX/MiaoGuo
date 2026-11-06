@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">秒过</string>
+    <string name="service_desc">自动点击应用开屏广告上的「跳过」按钮。本服务只读取当前屏幕上的控件文字，不上传任何数据。</string>
+    <string name="log_empty">还没有记录。开个带开屏广告的 App 试试。</string>
+
+    <string name="status_on_head">工作中</string>
+    <string name="status_on_sub">无障碍权限已开启。打开 App 时，会自动点掉开屏广告的「跳过」。</string>
+    <string name="status_off_head">未开启</string>
+    <string name="status_off_sub">还没拿到无障碍权限，现在它什么都不做。</string>
+
+    <string name="btn_enable">去开启无障碍权限</string>
+    <string name="btn_enabled">已开启 · 点此进入设置</string>
+
+    <string name="toggle_sub_on">已开启 · 只处理开屏广告</string>
+    <string name="toggle_sub_off">已关闭 · 不会做任何事</string>
+
+    <string name="help_text">【第一次用，先做这两步】\n\n1. 点上面的按钮，在系统列表里找到「秒过」并打开。\n如果开关是灰的、点不动（Android 13 及以上很常见）：回到桌面 → 长按「秒过」→ 应用信息 → 右上角三个点 → 「允许受限制的设置」，然后再回来打开。\n\n2. 进手机管家 / 电池设置，把「秒过」设为「允许后台运行、不要省电优化」。不设的话系统会把它悄悄杀掉，表现就是「用着用着就没效果了」。\n\n【它能做什么】\n只处理开屏广告：App 启动时占满屏幕、角落带「跳过 / 跳过 3s / 关闭」的那种。它只在这个 App 刚切到前台的 45 秒内找按钮，而且一次开屏最多试 2 次。\n\n点完它会停下来复查：按钮真的消失了才记一笔「✓」；还在的话会再试一次，两次都不行就记一条「⚠」然后收手。宁可漏，不乱点。\n\n【它治不了什么】\n1. 摇一摇广告——靠陀螺仪触发，无障碍服务碰不到传感器，只能少晃手机，或者在 App 设置里关掉。\n2. App 里的信息流、Banner 广告——和内容同一个接口下发，点了会误伤。\n3. 「跳过」是画在图片上的——没有文字节点就找不到。找不到它就不点。\n4. 优惠券弹窗上的「X」——目前不处理，误点风险太高。\n\n【怎么确认它在工作】\n上面「跳过记录」里每成功跳过一次会多一行。</string>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="44dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="先说清楚"
+            android:textColor="@color/text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="3dp"
+            android:text="这不是万能工具。有四件事，用之前你应该知道，完整条款在下方。"
+            android:textColor="@color/text_dim"
+            android:textSize="14sp" />
+
+        <!-- 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/bg_step"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/accent"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="它会替你点屏幕"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="只在 App 刚打开的那几十秒里找「跳过 / 关闭」按钮，认得出才点，认不出就不动。但凡是模拟点击，就有极小的概率点错位置。"
+                android:textColor="@color/text_dim"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/bg_step"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/accent"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="付款时它可能碍事"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="开着无障碍服务时，支付宝、微信支付、部分银行 App 会提示「支付环境异常」。这是所有第三方无障碍服务都会触发的检测，不是本应用特有。\n\n注意：关掉这里的「总开关」没有用，服务还开着。要让提示消失，得去系统设置 → 无障碍 → 已下载的服务 → 秒过，把它关掉。付款前关一下，付完再开。"
+                android:textColor="@color/text_dim"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/bg_step"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/accent"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="它不联网"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="没有申请网络权限，装上之后不会更新自己、不会上传任何东西。整个应用只申请了一条「忽略电池优化」权限。源码是公开的，可以自己核对。"
+                android:textColor="@color/text_dim"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/bg_step"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/accent"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="按「原样」提供"
+                    android:textColor="@color/text"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="本项目只做开屏广告这一件事，不能保证在所有应用上都有效。摇一摇广告、信息流广告、画在图片上的按钮，都治不了。\n\n软件按 GPL-3.0「原样」提供，不附带任何担保。因使用它造成的任何损失——包括误点、漏点、被带到第三方应用——作者不承担责任。"
+                android:textColor="@color/text_dim"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="28dp"
+            android:text="完整免责声明"
+            android:textColor="@color/text_dim"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tv_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:text="一、按「原样」提供\n本项目按现状（as-is）提供，不对适销性、特定用途适用性或非侵权性作任何明示或暗示的担保。使用本项目的风险由你自行承担。\n\n二、不承担任何责任\n在适用法律允许的最大范围内，开发者与贡献者不对因使用或无法使用本项目而导致的任何直接、间接、特殊、偶然或惩罚性损害承担责任，包括但不限于：误点造成的页面跳转或支付行为、漏点造成的额外广告观看、设备异常、数据丢失。\n\n三、许可证\n本项目以 GPL-3.0 发布。你可以自由使用、修改、分发，但必须保留原始许可条款；分发的衍生作品也必须以相同许可证授权。\n\n四、合法使用\n你需要自行确保使用行为符合所在国家或地区的法律法规，以及各 App 的服务条款。开发者不承担由此产生的任何法律后果。\n\n五、无障碍权限的固有风险\n本应用需要无障碍服务权限，该权限在技术上可以读取屏幕内容并模拟点击。本应用只把它用于识别开屏广告上的「跳过 / 关闭」按钮，不读取、不存储、不上传任何页面内容。但任何获得该权限的应用都具备同样的能力，是否信任请自行判断。\n\n六、第三方应用与广告\n本应用不修改、不破解任何第三方 App 或其广告 SDK，只在系统层面模拟点击。因第三方 App 自身策略、广告模板变化导致的效果差异，不属于本应用的缺陷。\n\n七、第三方组件\n本项目不包含任何第三方运行库或广告 SDK，全部代码都在本仓库内。\n\n八、更新与支持\n这是个人项目，不承诺持续更新，也不承诺修复某一款 App 的适配问题。"
+                android:textColor="@color/text_faint"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_disclaimer_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_btn_primary"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="我知道了"
+            android:textColor="@color/accent_ink"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:lineSpacingExtra="4dp"
+            android:text="点「我知道了」表示你已阅读以上内容。这个页面随时可以从主页底部重新打开。"
+            android:textColor="@color/text_faint"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
